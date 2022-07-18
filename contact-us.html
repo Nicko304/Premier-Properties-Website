@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="nav-image">
+            <nav id="navbar">
+                <ul class="nav-left">
+                    <li>
+                        <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
+                        title="Go to the Homepage">Premier Properties
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                                <button class="dropbtn">Locations
+                                    <i class="fa fa-caret-down"></i>
+                                    <!-- NEED TO FIX -->
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Property 1</a>
+                                    <a href="#">Property 2</a>
+                                </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html#welcome-section">Why Premier Properties</a>
+                    </li>
+                    <li>
+                        <a href="#">Apply</a>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section id="office-headquarters">
+            <h1>Office Headquarters</h1>
+            <p>19384 Random Ave</p>
+            <p>Los Angeles, CA 91201</p>
+        </section>
+        <section id="call-us">
+            <h1>Call Us</h1>
+            <div id="contacts">
+                <div class="contact-details">
+                    <p>Main Office</p>
+                    <p>818.555.7777</p>
+                </div>
+                <div class="contact-details">
+                    <p>Secondary Office</p>
+                    <p>818.555.7777</p>
+                </div>
+                <div class="contact-details">
+                    <p>Property Manager A</p>
+                    <p>818.555.7777</p>
+                </div>
+                <div class="contact-details">
+                    <p> Property Manager B</p>
+                    <p>818.555.7777</p>
+                </div>
+            </div>
+        </section>
+        <section id="message-us">
+            <form id="message-form" action="https://formsubmit.co/nicko30403@gmail.com" method="POST">
+                <fieldset id="message-item">
+                    <h1>Message Us</h1>
+                    <input id="first-name" name="first-name" type="text" placeholder="First Name *"
+                    required />
+                    <input id="last-name" name="last-name" type="text" placeholder="Last Name *"
+                    required />
+                    <input id="email" name="email" type="text" placeholder="Email *"
+                    required />
+                    <input id="phone" name="phone" type="text" placeholder="Phone #"/>
+                    <label>How do you want to be contacted?
+                        <select id="dropdown" name="preference" required>
+                            <option value="">(Select one)</option>
+                            <option value="contact-by-email">By email</option>
+                            <option value="contact-by-phone">By phone</option>
+                        </select>
+                    </label>
+                    <label>What would you like to tell us?
+                        <textarea name="message" rows="3" cols="30" 
+                        placeholder="Additional comments here..."></textarea>
+                    </label>
+                </fieldset>
+                <div class="button-holder">
+                    <input id="submit" type="submit" value="Send Message"></input>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
