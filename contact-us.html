@@ -2,64 +2,72 @@
 <html>
     <head>
         <link rel="stylesheet" href="style2.css">
+        <script src="apply-script.js" defer></script>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"> -->
     </head>
     <body>
-        <div id="nav-image">
-            <nav id="navbar">
-                <ul class="nav-left">
+        <nav class="navbar">
+            <div class="brand-title">
+                <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
+                title="Go to the Homepage">Premier Properties
+                </a>
+            </div>
+            <!-- Hamburger -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
                     <li>
-                        <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
-                        title="Go to the Homepage">Premier Properties
-                        </a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                                <button class="dropbtn">Locations
-                                    <i class="fa fa-caret-down"></i>
-                                    <!-- NEED TO FIX -->
-                                </button>
-                                <div class="dropdown-content">
-                                    <a href="#">Property 1</a>
-                                    <a href="#">Property 2</a>
-                                </div>
+                        <div class="dropdown">Locations
+                            <!-- <button class="dropbtn">
+                                <i class="fa fa-caret-down"></i> 
+                            </button> -->
+                            <div class="dropdown-content">
+                                <a href="#">Sun Valley</a>
+                                <a href="#">Reseda</a>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html#welcome-section">Why Premier Properties</a>
                     </li>
                     <li>
-                        <a href="#">Apply</a>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/apply.html">Apply</a>
                     </li>
-                </ul>
-                <ul class="nav-right">
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#">Maitenance Request</a>
+                    </li>
+                    <li>
+                        <a href="C:\Users\Nicholas Schumacher\Desktop\C++ Projects\Premier Properties\contact-us.html">Contact Us</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        <section id="office-headquarters">
+            </div>
+        </nav>
+        <!-- <section id="office-headquarters">
             <h1>Office Headquarters</h1>
             <p>19384 Random Ave</p>
             <p>Los Angeles, CA 91201</p>
-        </section>
+        </section> -->
         <section id="call-us">
             <h1>Call Us</h1>
             <div id="contacts">
                 <div class="contact-details">
-                    <p>Main Office</p>
+                    <p>General Manager</p>
                     <p>818.555.7777</p>
                 </div>
                 <div class="contact-details">
-                    <p>Secondary Office</p>
+                    <p>Property Manager</p>
                     <p>818.555.7777</p>
                 </div>
                 <div class="contact-details">
-                    <p>Property Manager A</p>
+                    <p>Onsite Sun Valley Manager</p>
                     <p>818.555.7777</p>
                 </div>
                 <div class="contact-details">
-                    <p> Property Manager B</p>
+                    <p>Onsite Reseda Manager</p>
                     <p>818.555.7777</p>
                 </div>
             </div>

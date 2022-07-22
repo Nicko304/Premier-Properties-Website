@@ -2,37 +2,30 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="apply-script.js" defer></script>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"> -->
     </head>
     <body>
-        <nav class="navbar">
-            <div class="brand-title">
-                <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
-                title="Go to the Homepage">Premier Properties
-                </a>
-            </div>
-            <!-- Hamburger -->
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
+        <div id="nav-image">
+            <nav id="navbar">
+                <ul class="nav-left">
                     <li>
-                        <div class="dropdown">Locations
-                            <!-- <button class="dropbtn">
-                                <i class="fa fa-caret-down"></i> 
-                            </button> -->
-                            <div class="dropdown-content">
-                                <a href="#">Sun Valley</a>
-                                <a href="#">Reseda</a>
-                            </div>
+                        <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
+                        title="Go to the Homepage">Premier Properties
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                                <button class="dropbtn">Locations
+                                    <i class="fa fa-caret-down"></i>
+                                    <!-- NEED TO FIX -->
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Sun Valley</a>
+                                    <a href="#">Reseda</a>
+                                </div>
                         </div>
                     </li>
                     <li>
-                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html#welcome-section">Why Premier Properties</a>
+                        <a href="#welcome-section">Why Premier Properties</a>
                     </li>
                     <li>
                         <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/apply.html">Apply</a>
@@ -40,12 +33,13 @@
                     <li>
                         <a href="#">Maitenance Request</a>
                     </li>
+                </ul>
+                <ul class="nav-right">
                     <li>
                         <a href="C:\Users\Nicholas Schumacher\Desktop\C++ Projects\Premier Properties\contact-us.html">Contact Us</a>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
             <div id="img-div">
                 <img id="banner-image" src="https://cdn.discordapp.com/attachments/928100975556837456/997262903453437962/unknown.png">
             </div>
@@ -143,5 +137,3 @@
         </section>
     </body>
 </html>
-
-

@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Oswald:wght@500&display=swap');
+
+* { /* Good resizing measure for multiple screen sizes */
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Disables horrizontal sidebar */
+}
+
+body {
+    margin: 0;
+      /*For some reason this allows the color of other sections (its child sections) to extend to the edge. Without this, there will be 
+      some white on the edge or whatever color the body is if there is any. */
+
+}
+
+#navbar { /* I don't know why but making this into a class changes the website */
+    display: flex;
+    justify-content: space-between; /* Helps with left and right side of navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(178, 211, 233);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);   
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5rem; /* Moves elements on left side to the right a little more */
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 40px; /* Similar to using margin in this situation, but is better since the links are more easily clickable */
+    text-decoration: none; /* I think it gets rid of ugly automatic link syntax */
+    color: black;
+    cursor: pointer;
+}
+
+#navbar a:hover {
+    background-color: white;
+}
+
+#home-button:hover {
+    background-color: transparent !important;
+}
+
+#banner-image {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh);
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    object-fit: cover;
+    /*
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+    */
+}
+
+#home-button {
+    display: block;
+    box-sizing: content-box !important;
+    clear: left;
+    float: left;
+    height: 40px;
+    margin-top: -15px;
+    overflow: hidden;
+    width: 91px;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: rgb(43, 45, 46) !important; /* !important helps with conflicting #navbar a color */
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    /* color: white; (From website) */
+    padding: 10px 40px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to dropdowns on hover */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hides itself */
+    position: absolute; /* Prevents navbar from changing when dropdown is opened */
+    background-color: rgb(178, 211, 233);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 95vh; /* Without this, navbar cuts off title */
+    padding: 5% 60px 0; /* Syntax for Values: top [left and right] bottom */
+    margin: 0 auto;
+}
+
+#features { /* Parent container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+#features > div { /* First child (container for img and text) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+    padding: 0 4px;
+    /* background-color: blue; */
+}
+
+.features-img { /* Second child (image) */
+    width: 20%;
+    height: 5rem;
+    padding: 0 4px;
+    /* background-color: red; */
+}
+
+.features-text { /* Second child (text box/div) */
+    width: 55%;
+    padding: 0 8px;
+    /* background-color: pink; */
+}
+
+
+
+/* #features img {
+    width: 25%;
+    object-fit: cover;
+    background-color: red;
+    /* height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px; /
+} */
+
+.box { /* TEST STUFF */
+    background-color: red;
+    width: 250px;
+    height: 250px;
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="apply-style.css">
+        <script src="apply-script.js" defer></script>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"> -->
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
+                title="Go to the Homepage">Premier Properties
+                </a>
+            </div>
+            <!-- Hamburger -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <div class="dropdown">Locations
+                            <!-- <button class="dropbtn">
+                                <i class="fa fa-caret-down"></i> 
+                            </button> -->
+                            <div class="dropdown-content">
+                                <a href="#">Sun Valley</a>
+                                <a href="#">Reseda</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html#welcome-section">Why Premier Properties</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/apply.html">Apply</a>
+                    </li>
+                    <li>
+                        <a href="#">Maitenance Request</a>
+                    </li>
+                    <li>
+                        <a href="C:\Users\Nicholas Schumacher\Desktop\C++ Projects\Premier Properties\contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="message-us">
+            <h1>Apply to Rent</h1>
+            <p>Thanks for your interest in our units. Feel free to apply here and we will get back to your as soon as possible. Also, please do one application per person if you are having roomates splitting rent.</p>
+            <form id="message-form" action="https://formsubmit.co/nicko30403@gmail.com" method="POST">
+                <div id="message-item">
+                    <h3>Section 1</h3>
+                    <label>First Name <span style="color:#ff0000">*</span>
+                        <input id="first-name" name="First name:" type="text"
+                        required />
+                    </label>
+                    <label>Middle Name (optional)
+                        <input id="middle-name" name="Middle name:" type="text"
+                        required />
+                    </label>
+                    <label>Last Name <span style="color:#ff0000">*</span>
+                        <input id="last-name" name="Last name:" type="text"
+                        required />
+                    </label>
+                    <label>Email Address <span style="color:#ff0000">*</span>
+                        <input id="email" name="Email:" type="text" placeholder="example@gmail.com"
+                        required />
+                    </label>
+                    <label>Phone number
+                        <input id="phone" name="Phone number:" type="text" placeholder="(###) ###-####"/>
+                    </label>
+                    <label>Driver's License Number <span style="color:#ff0000">*</span>
+                        <input id="driver-id" name="Driver's License Number:" type="text"
+                        required />
+                    </label>
+                    <label>Social Security Number <span style="color:#ff0000">*</span>
+                        <input id="ssn-id" name="Social Security Number:" type="text"
+                        required />
+                    </label>
+                    <label>Birthdate <span style="color:#ff0000">*</span>
+                        <input id="birthday-id" name="Birthdate:" type="text" placeholder="MM/DD/YYYY"
+                        required />
+                    </label>
+                    <label>I hereby apply to rent/lease the property at: <span style="color:#ff0000">*</span>
+                        <select id="dropdown" name="Property:" required>
+                            <option value="">(Select one)</option>
+                            <option value="1">Sun Valley</option>
+                            <option value="2">Reseda</option>
+                            <option value="3">Other (include in additional comments section)</option>
+                        </select>
+                    </label>
+                    <h3>Section 2</h3>
+                <fieldset>
+                    <label>Current Home Address <span style="color:#ff0000">*</span>
+                        <input id="home-address-id" name="Current Home Address:" type="text"
+                        required/>
+                    </label>
+                    <label>City <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>State <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Zip <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>How long at this address? <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Rent Paid <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Phone Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Prior Home Address
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>City
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>State
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Zip
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>How long at address
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Rent Paid
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Mgr. Phone Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                    <h3>Section 3</h3>
+                    <label>Current Employment <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Monthly Salary <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Occupation <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Employer Name <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Employer Phone Number <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Work Address <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <h3>Section 4</h3>
+                    <label>Current Landlord's Name <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Current Landlord's Phone Number <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Previous Employer Name <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Previous Employer Phone Number <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>Previous Work Address <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <h3>Section 5</h3>
+                <fieldset>
+                    <label>Personal Reference
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Address
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>City
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Relationship
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Phone Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Time Known
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Personal Reference 2
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Address
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>City
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Relationship
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Phone Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Time Known
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                    <h3>Section 6</h3>
+                    <fieldset>
+                        <label>Vehicle
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Make
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Year
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Color
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Licence Number
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>State
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>Vehicle 2
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Make
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Year
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Color
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>Licence Number
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                        <label>State
+                            <input id="________-id" name="________:" type="text"
+                            />
+                        </label>
+                    </fieldset>
+                    <h3>Section 7</h3>
+                    <p>Please explain any “Yes” answers at the end of this section.</p>
+                    <label>Do you have any credit problems? <span style="color:#ff0000">*</span>
+                    </label>
+                    <label>
+                        <input name="Do they have credit problems:" type="radio" value="Yes"
+                        class="inline" required /> Yes
+                    </label>
+                    <label>
+                        <input name="Do they have credit problems:" type="radio" value="No"
+                        class="inline" required /> No
+                    </label>
+                    <label>Do you have any pets? <span style="color:#ff0000">*</span>
+                    </label>
+                    <label>
+                        <input name="Do they have pets:" type="radio" value="Yes"
+                        class="inline" required /> Yes
+                    </label>
+                    <label>
+                        <input name="Do they have pets:" type="radio" value="No"
+                        class="inline" required /> No
+                    </label>
+                    <label>Have you ever been evicted for any reason or had an unlawful detainer filed against you? <span style="color:#ff0000">*</span>
+                    </label>
+                    <label>
+                        <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="Yes"
+                        class="inline" required /> Yes
+                    </label>
+                    <label>
+                        <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="No"
+                        class="inline" required /> No
+                    </label>
+                    <label>Have you ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs? <span style="color:#ff0000">*</span>
+                    </label>
+                    <label>
+                        <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="Yes"
+                        class="inline" required /> Yes
+                    </label>
+                    <label>
+                        <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="No"
+                        class="inline" required /> No
+                    </label>
+                    <label>Please explain any "yes" answers here
+                        <textarea name="message" rows="3" cols="30" 
+                        placeholder="Explaination here..."></textarea>
+                    </label>
+                    <h3>Section 8</h3>
+                    <label>Please List All Proposed Occupants <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                    <label>How do you prefer to be contacted? <span style="color:#ff0000">*</span>
+                        <select id="dropdown" name="preference" required>
+                            <option value="">(Select one)</option>
+                            <option value="Prefer to be contacted by email.">By email</option>
+                            <option value="Prefer to be contacted by phone.">By phone</option>
+                        </select>
+                    </label>
+                    <label>Any additional comments?
+                        <textarea name="message" rows="3" cols="30" 
+                        placeholder="Additional comments here..."></textarea>
+                    </label>
+
+
+
+
+                    <h3>Section TEST FILLER</h3>
+                    <label>__________ <span style="color:#ff0000">*</span>
+                        <input id="________-id" name="________:" type="text"
+                        required />
+                    </label>
+                </div>
+
+
+
+                
+                <div class="button-holder">
+                    <input id="submit" type="submit" value="Submit Application"></input>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
