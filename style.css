@@ -35,6 +35,7 @@ body {
 .brand-title {
     font-size: 1.5rem;
     margin: 0.5rem;
+  white-space: nowrap;
     font-family: 'Edu QLD Beginner', cursive;
     font-family: 'Oswald', sans-serif;
 }
