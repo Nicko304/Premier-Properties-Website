@@ -175,8 +175,21 @@ p {
     margin: 0 auto;
 }
 
+#message-form {
+    background-color: rgb(216, 216, 216);
+}
+
+#message-item {
+    border: none;
+    outline: none;
+    border-width: 0px;
+}
+
 #message-item * {
     margin-top: 1rem;
+    border: none;
+    outline: none;
+    border-width: 0px;
 }
 
 label {
@@ -246,5 +259,14 @@ select {
 
     #call-us {
         padding: 8% 60px 0; /* Syntax for Values: top [left and right] bottom */
+    }
+}
+
+@media (max-width: 767px) {
+    #message-us {
+        max-width: none;
+        height: 20vh;
+        padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
+        margin: 0;
     }
 }
