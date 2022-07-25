@@ -220,7 +220,7 @@ select {
     min-height: 2em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     #message-us {
         max-width: none;
         height: 20vh;
