@@ -220,6 +220,15 @@ select {
     min-height: 2em;
 }
 
+@media (max-width: 1000px) {
+    #message-us {
+        max-width: none;
+        height: 20vh;
+        padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
+        margin: 0;
+    }
+}
+
 @media (max-width: 850px){
     .toggle-button {
         display: flex;
@@ -259,14 +268,5 @@ select {
 
     #call-us {
         padding: 8% 60px 0; /* Syntax for Values: top [left and right] bottom */
-    }
-}
-
-@media (max-width: 767px) {
-    #message-us {
-        max-width: none;
-        height: 20vh;
-        padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
-        margin: 0;
     }
 }
