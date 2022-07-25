@@ -142,6 +142,7 @@ h1 {
     text-align: center;
     /* font-size: 3rem; */
     margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 p {
@@ -190,6 +191,7 @@ p {
     border: none;
     outline: none;
     border-width: 0px;
+    /* height: 3rem; */
 }
 
 label {
@@ -217,8 +219,9 @@ textarea,
 select {
     margin: 10px 0 0 0;
     width: 100%;
-    min-height: 2em;
+    min-height: 3em;
 }
+
 
 @media (max-width: 1200px) {
     #message-us {
