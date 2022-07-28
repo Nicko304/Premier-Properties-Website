@@ -239,7 +239,7 @@ select {
         max-width: none;
         height: 20vh;
         padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
-        margin: 0 2rem;
+        margin: 0 6rem;
     }
 }
 
