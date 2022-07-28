@@ -172,7 +172,7 @@ p {
 #message-us {
     max-width: 820px;
     /* height: 20vh; */
-    padding: 5% 60px 0; /* Syntax for Values: top [left and right] bottom */
+    padding: 2% 60px 0; /* Syntax for Values: top [left and right] bottom */
     margin: 0 auto;
 }
 
@@ -188,7 +188,7 @@ p {
 }
 
 #message-item * {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     border: none;
     outline: none;
     border-width: 0px;
@@ -198,6 +198,7 @@ p {
 label {
     display: block;
     margin: 0.5rem 0;
+    font-size: 1.25rem;
 }
 
 #submit {
