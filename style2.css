@@ -28,7 +28,7 @@ body {
     color: white;
     width: 100%;
     z-index: 10;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .brand-title {
@@ -152,7 +152,7 @@ p {
 #call-us {
     width: 100%;
     height: auto; /* Without this, navbar cuts off title */
-    padding: 5% 60px 0; /* Syntax for Values: top [left and right] bottom */
+    padding: 6% 60px 0; /* Syntax for Values: top [left and right] bottom */
     margin: 0 auto;
 }
 
@@ -204,6 +204,7 @@ label {
 #submit {
     max-width: 50%;
     height: 4rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
     background-color: rgb(255, 206, 116);
     border-color: white;
@@ -233,17 +234,6 @@ select {
     padding: 0.5rem;
 }
 
-
-@media (max-width: 1200px) {
-
-    #message-us {
-        max-width: none;
-        height: 20vh;
-        padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
-        margin: 0;
-    }
-    
-}
 
 @media (max-width: 850px){
     .toggle-button {
@@ -283,6 +273,28 @@ select {
     }
 
     #call-us {
-        padding: 8% 60px 0; /* Syntax for Values: top [left and right] bottom */
+        padding: 15% 60px 0; /* Syntax for Values: top [left and right] bottom */
     }
+
+
+}
+
+
+/* @media (min-width: 1024px) {
+
+}
+
+@media (max-width: 1023px) {
+
+} */
+
+@media (max-width: 767px) {
+
+    #message-us {
+        max-width: none;
+        height: 20vh;
+        padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
+        margin: 0;
+    }
+    
 }
