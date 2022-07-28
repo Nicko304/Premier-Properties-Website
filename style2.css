@@ -184,6 +184,7 @@ p {
     border: none;
     outline: none;
     border-width: 0px;
+    margin: 0 3.5rem;
 }
 
 #message-item * {
@@ -233,11 +234,12 @@ select {
 
 
 @media (max-width: 1200px) {
+
     #message-us {
         max-width: none;
         height: 20vh;
         padding: 5% 0 0; /* Syntax for Values: top [left and right] bottom */
-        margin: 0;
+        margin: 0 2rem;
     }
 }
 

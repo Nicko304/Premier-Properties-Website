@@ -23,6 +23,8 @@ body {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    white-space: nowrap;
+    flex-wrap: nowrap;
     align-items: center;
     /* background-color: #333; */
     background-color: #616161;
@@ -35,7 +37,7 @@ body {
 .brand-title {
     font-size: 1.5rem;
     margin: 0.5rem;
-  white-space: nowrap;
+    white-space: nowrap;
     font-family: 'Edu QLD Beginner', cursive;
     font-family: 'Oswald', sans-serif;
 }
