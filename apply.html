@@ -3,12 +3,12 @@
     <head>
         <link rel="stylesheet" href="apply-style.css">
         <script src="apply-script.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"> -->
     </head>
     <body>
         <nav class="navbar">
             <div class="brand-title">
-                <a id="home-button" href="https://nicko304.github.io/premierproperties/" 
+                <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
                 title="Go to the Homepage">Premier Properties
                 </a>
             </div>
@@ -32,16 +32,16 @@
                         </div>
                     </li>
                     <li>
-                        <a href="https://nicko304.github.io/premierproperties/#welcome-section">Why Premier Properties</a>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html#welcome-section">Why Premier Properties</a>
                     </li>
                     <li>
-                        <a href="https://nicko304.github.io/premierproperties/apply.html">Apply</a>
+                        <a href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/apply.html">Apply</a>
                     </li>
                     <li>
                         <a href="#">Maitenance Request</a>
                     </li>
                     <li>
-                        <a href="https://nicko304.github.io/premierproperties/contact-us.html">Contact Us</a>
+                        <a href="C:\Users\Nicholas Schumacher\Desktop\C++ Projects\Premier Properties\contact-us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,10 @@
             <p>Thanks for your interest in our units. Feel free to apply here and we will get back to your as soon as possible. Also, please do one application per person if you are having roomates splitting rent.</p>
             <form id="message-form" action="https://formsubmit.co/nicko30403@gmail.com" method="POST">
                 <div id="message-item">
-                    <h3>Section 1</h3>
+                    <div class="section-header">
+                        <h2>Section 1</h2>
+                        <h3>Background Information</h3>
+                    </div>
                     <label>First Name <span style="color:#ff0000">*</span>
                         <input id="first-name" name="First name:" type="text"
                         required />
@@ -91,7 +94,10 @@
                             <option value="3">Other (include in additional comments section)</option>
                         </select>
                     </label>
-                    <h3>Section 2</h3>
+                <div class="section-header">
+                    <h2>Section 2</h2>
+                    <h3>Home History</h3>
+                </div>
                 <fieldset>
                     <label>Current Home Address <span style="color:#ff0000">*</span>
                         <input id="home-address-id" name="Current Home Address:" type="text"
@@ -152,7 +158,10 @@
                         />
                     </label>
                 </fieldset>
-                    <h3>Section 3</h3>
+                <div class="section-header">
+                    <h2>Section 3</h2>
+                    <h3>Employment</h3>
+                </div>
                     <label>Current Employment <span style="color:#ff0000">*</span>
                         <input id="________-id" name="________:" type="text"
                         required />
@@ -177,7 +186,10 @@
                         <input id="________-id" name="________:" type="text"
                         required />
                     </label>
-                    <h3>Section 4</h3>
+                    <div class="section-header">
+                        <h2>Section 4</h2>
+                        <h3>Landlord & Previous Employment Information</h3>
+                    </div>
                     <label>Current Landlord's Name <span style="color:#ff0000">*</span>
                         <input id="________-id" name="________:" type="text"
                         required />
@@ -198,7 +210,10 @@
                         <input id="________-id" name="________:" type="text"
                         required />
                     </label>
-                    <h3>Section 5</h3>
+                <div class="section-header">
+                    <h2>Section 5</h2>
+                    <h3>References</h3>
+                </div>
                 <fieldset>
                     <label>Personal Reference
                         <input id="________-id" name="________:" type="text"
@@ -251,131 +266,149 @@
                         />
                     </label>
                 </fieldset>
-                    <h3>Section 6</h3>
-                    <fieldset>
-                        <label>Vehicle
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Make
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Year
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Color
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Licence Number
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>State
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label>Vehicle 2
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Make
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Year
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Color
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>Licence Number
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                        <label>State
-                            <input id="________-id" name="________:" type="text"
-                            />
-                        </label>
-                    </fieldset>
-                    <h3>Section 7</h3>
-                    <p>Please explain any “Yes” answers at the end of this section.</p>
-                    <label>Do you have any credit problems? <span style="color:#ff0000">*</span>
-                    </label>
-                    <label>
-                        <input name="Do they have credit problems:" type="radio" value="Yes"
-                        class="inline" required /> Yes
-                    </label>
-                    <label>
-                        <input name="Do they have credit problems:" type="radio" value="No"
-                        class="inline" required /> No
-                    </label>
-                    <label>Do you have any pets? <span style="color:#ff0000">*</span>
-                    </label>
-                    <label>
-                        <input name="Do they have pets:" type="radio" value="Yes"
-                        class="inline" required /> Yes
-                    </label>
-                    <label>
-                        <input name="Do they have pets:" type="radio" value="No"
-                        class="inline" required /> No
-                    </label>
-                    <label>Have you ever been evicted for any reason or had an unlawful detainer filed against you? <span style="color:#ff0000">*</span>
-                    </label>
-                    <label>
-                        <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="Yes"
-                        class="inline" required /> Yes
-                    </label>
-                    <label>
-                        <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="No"
-                        class="inline" required /> No
-                    </label>
-                    <label>Have you ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs? <span style="color:#ff0000">*</span>
-                    </label>
-                    <label>
-                        <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="Yes"
-                        class="inline" required /> Yes
-                    </label>
-                    <label>
-                        <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="No"
-                        class="inline" required /> No
-                    </label>
-                    <label>Please explain any "yes" answers here
-                        <textarea name="message" rows="3" cols="30" 
-                        placeholder="Explaination here..."></textarea>
-                    </label>
-                    <h3>Section 8</h3>
-                    <label>Please List All Proposed Occupants <span style="color:#ff0000">*</span>
-                        <input id="________-id" name="________:" type="text"
-                        required />
-                    </label>
-                    <label>How do you prefer to be contacted? <span style="color:#ff0000">*</span>
-                        <select id="dropdown" name="preference" required>
-                            <option value="">(Select one)</option>
-                            <option value="Prefer to be contacted by email.">By email</option>
-                            <option value="Prefer to be contacted by phone.">By phone</option>
-                        </select>
-                    </label>
-                    <label>Any additional comments?
-                        <textarea name="message" rows="3" cols="30" 
-                        placeholder="Additional comments here..."></textarea>
-                    </label>
-
-
-
-
-                    <h3>Section TEST FILLER</h3>
-                    <label>__________ <span style="color:#ff0000">*</span>
-                        <input id="________-id" name="________:" type="text"
-                        required />
-                    </label>
+                <div class="section-header">
+                    <h2>Section 6</h2>
+                    <h3>Vehicle Information</h3>
                 </div>
+                <fieldset>
+                    <label>Vehicle
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Make
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Year
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Color
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Licence Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>State
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Vehicle 2
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Make
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Year
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Color
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>Licence Number
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                    <label>State
+                        <input id="________-id" name="________:" type="text"
+                        />
+                    </label>
+                </fieldset>
+                <div class="section-header">
+                    <h2>Section 7</h2>
+                    <h3>Circumstances</h3>
+                </div>
+                <p>Please explain any “Yes” answers at the end of this section.</p>
+                <label>Do you have any credit problems? <span style="color:#ff0000">*</span>
+                </label>
+                <label>
+                    <input name="Do they have credit problems:" type="radio" value="Yes"
+                    class="inline" required /> Yes
+                </label>
+                <label>
+                    <input name="Do they have credit problems:" type="radio" value="No"
+                    class="inline" required /> No
+                </label>
+                <label>Do you have any pets? <span style="color:#ff0000">*</span>
+                </label>
+                <label>
+                    <input name="Do they have pets:" type="radio" value="Yes"
+                    class="inline" required /> Yes
+                </label>
+                <label>
+                    <input name="Do they have pets:" type="radio" value="No"
+                    class="inline" required /> No
+                </label>
+                <label>Have you ever been evicted for any reason or had an unlawful detainer filed against you? <span style="color:#ff0000">*</span>
+                </label>
+                <label>
+                    <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="Yes"
+                    class="inline" required /> Yes
+                </label>
+                <label>
+                    <input name="Have they ever been evicted for any reason or had an unlawful detainer filed against them:" type="radio" value="No"
+                    class="inline" required /> No
+                </label>
+                <label>Have you ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs? <span style="color:#ff0000">*</span>
+                </label>
+                <label>
+                    <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="Yes"
+                    class="inline" required /> Yes
+                </label>
+                <label>
+                    <input name="Have they ever been convicted of selling, possessing, distributing, or manufacturing illegal drugs:" type="radio" value="No"
+                    class="inline" required /> No
+                </label>
+                <label>Please explain any "yes" answers here
+                    <textarea name="message" rows="3" cols="30" 
+                    placeholder="Explaination here..."></textarea>
+                </label>
+                <div class="section-header">
+                    <h2>Section 8</h2>
+                    <h3>Additional Information</h3>
+                </div>
+                <label>Please List All Proposed Occupants <span style="color:#ff0000">*</span>
+                    <input id="________-id" name="________:" type="text"
+                    required />
+                </label>
+                <label>How do you prefer to be contacted? <span style="color:#ff0000">*</span>
+                    <select id="dropdown" name="preference" required>
+                        <option value="">(Select one)</option>
+                        <option value="Prefer to be contacted by email.">By email</option>
+                        <option value="Prefer to be contacted by phone.">By phone</option>
+                    </select>
+                </label>
+                <label>Any additional comments?
+                    <textarea name="message" rows="3" cols="30" 
+                    placeholder="Additional comments here..."></textarea>
+                </label>
+                <div class="section-header">
+                    <h2>Section 9</h2>
+                    <h3>Affirmations & Signature</h3>
+                </div>
+                <label>Applicant represents that statements made are true and correct and here by authorizes verification of references to include but not limited to
+                    credit checks, unlawful detainer checks & credit checks and agrees to furnish additional credit references on request. I authorize verification
+                    of the information contained herein solely for the purpose of establishing my qualifications as a tenant. I release anyone verifying such
+                    information or providing information, from liability. I understand that incomplete or incorrect information provided in the application, may cause
+                    a delay in processing and can result in denial of tenancy.
+                    <label>Picture of Signature:</label>
+                    <input type="file" name="attachment" accept="image/png, image/jpeg">
+                    <input type="email" name="email" placeholder="MM/DD/YYYY">
+                </label>
+
+                <!-- <h3>Section TEST FILLER</h3>
+                <label>__________ <span style="color:#ff0000">*</span>
+                    <input id="________-id" name="________:" type="text"
+                    required />
+                </label> -->
 
 
 
