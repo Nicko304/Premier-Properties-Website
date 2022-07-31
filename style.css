@@ -23,7 +23,6 @@ body {
     display: flex;
     position: fixed;
     justify-content: space-between;
-    white-space: nowrap;
     flex-wrap: nowrap;
     align-items: center;
     /* background-color: #333; */
@@ -264,6 +263,11 @@ body {
     .dropdown-content {
         left: 48%;
         margin-top: 0.5rem;
+    }
+
+    #welcome-section {
+        padding: 5% 1rem 0; /* Syntax for Values: top [left and right] bottom */
+
     }
 
     #features {
