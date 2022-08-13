@@ -202,6 +202,7 @@ h1 {
 
 .details-text {
     margin-left: 15%;
+    margin-right: 15%;
 }
 
 .amenities-container { /* Parent container */
@@ -301,6 +302,14 @@ h1 {
 }
 
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        margin-left: 5%; /* GENIUS */
+    }
+
     .info-item {
         width: 100%;
     }
