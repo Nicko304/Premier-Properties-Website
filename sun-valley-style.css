@@ -260,6 +260,18 @@ h1 {
     /* flex: 1 1 auto; */
 }
 
+.maps-container {
+    width: 80%;
+    margin: 1rem auto 10rem;
+    border-radius: 10px;
+    border: 1.2px solid #999;
+}
+
+.maps-container iframe {
+    width: 100%;
+}
+
+
 
 
 @media (max-width: 850px){
