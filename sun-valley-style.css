@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Oswald:wght@500&display=swap');
+
+* { /* Good resizing measure for multiple screen sizes */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Disables horrizontal sidebar */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+      /*For some reason this allows the color of other sections (its child sections) to extend to the edge. Without this, there will be 
+      some white on the edge or whatever color the body is if there is any. */
+
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    background-color: #616161;
+    color: white;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); 
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+
+.brand-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a, .dropdown {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block; /* Helps with spacing overall */
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+/* NON RESPONSE NAVBAR COMPLETE */
+/* Now need to make it responsive */
+
+/* Hamburger Button */
+.toggle-button {
+    position: absolute; /* Allows us to force it to be on right side of screen
+    without messing with flow of the rest of the elements */
+    top: .75rem;
+    right: 1rem; /* 1rem from the right side of the screen */
+    display: none;
+    flex-direction: column; /* Allows spans to line up on top of each other */
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar { /* Three lines thing (uses the span in html) */
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.dropdown .dropbtn {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    /* display: block; */
+    /* color: white; (From website) */
+    /* padding: 10px 40px; */
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    /* margin: 0; /* Important for vertical align on mobile phones * */
+}
+
+/* Add a red background color to dropdowns on hover */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hides itself */
+    position: absolute; /* Prevents navbar from changing when dropdown is opened */
+    background-color: #616161;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* SHOWCASE SECTION */
+
+.container {
+    width: 70%;
+    /* height: 90vh; */
+    margin: 0 auto;
+    /* background: #222; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    background: rgba(165, 165, 165, 0.281);
+    padding: 2rem;
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+/* END OF SHOWCASE SECTION */
+
+h1 {
+    /* text-align: center; */
+    font-siZe: 2em;
+    margin-bottom: 0;
+    margin-left: 15%; /* GENIUS */
+}
+
+
+.info-container { /* Parent container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+
+.info-container > div { /* First child (container for both text) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    /* width: 30%; */
+    object-fit: cover;
+    /* margin: 2rem;  Works but makes line not where I want it */
+    margin-top: 1.5rem;
+    /* margin-left: 2rem; */
+    padding: 0 4rem;
+    /* background-color: blue; */
+}
+
+
+
+.info-item + .info-item { /* Only activates when
+    element has preceeding element that matches */
+    border-left: 1px solid #ddd;
+}
+
+.details-text {
+    margin-left: 15%;
+}
+
+.amenities-container { /* Parent container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.amenities-item { /* First child (container for img and text) */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    /* height: 300px; */
+    object-fit: cover;
+    margin: 1rem 3rem;
+    padding: 0 4px;
+    /* background-color: blue; */
+}
+
+.amenities-img { /* Second child (image) */
+    width: 100%;
+    height: 5rem;
+    padding: 0 4px;
+    /* background-color: red; */
+}
+
+.amenities-text { /* Second child (text box/div) */
+    /* width: 55%; */
+    text-align: center;
+    padding: 0 8px;
+}
+
+
+.unit-container, .maps-container {
+    margin-bottom: 10vh;
+}
+
+.unit-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 17.5% 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.unit-item p {
+    width: 25%;
+    /* text-align: center; */
+
+    /* flex: 1 1 auto; */
+}
+
+
+
+@media (max-width: 850px){
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a, .dropdown {
+        padding: 0.5rem 1rem; /* Brings vertical nav links closer together */
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .dropdown-content {
+        left: 48%;
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .info-item {
+        width: 100%;
+    }
+
+    .info-item + .info-item { /* Only activates when
+        element has preceeding element that matches */
+        border-left: none;
+    }
+
+    .unit-item {
+        margin: 0 0 0;
+        width: 100%;
+    }
+
+    .unit-item p {
+        width: 25%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .unit-item p {
+        font-size: 0.75rem;
+    }
+}
