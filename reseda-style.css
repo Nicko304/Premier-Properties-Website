@@ -227,12 +227,14 @@ h1 {
     /* background-color: blue; */
 }
 
+
 .img-sizer {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 6.0625rem;
 }
+
 
 .amenities-img { /* Second child (image) */
     width: 100%;
