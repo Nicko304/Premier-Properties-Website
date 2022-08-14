@@ -238,8 +238,9 @@ h1 {
 
 .amenities-img { /* Second child (image) */
     width: 100%;
+    margin: 0 auto;
     height: 5rem;
-    padding: 0 4px;
+    /* padding: 0 4px; */
     /* background-color: red; */
 }
 
@@ -338,6 +339,10 @@ h1 {
     .info-item + .info-item { /* Only activates when
         element has preceeding element that matches */
         border-left: none;
+    }
+
+    .img-sizer {
+        width: 4.0625rem;
     }
 
     .unit-item {

@@ -338,6 +338,10 @@ h1 {
         border-left: none;
     }
 
+    .img-sizer {
+        width: 4.0625rem;
+    }
+
     .unit-item {
         margin: 0 0 0;
         width: 100%;
