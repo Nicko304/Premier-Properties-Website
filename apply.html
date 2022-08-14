@@ -35,7 +35,7 @@
                         <a href="apply.html">Apply</a>
                     </li>
                     <li>
-                        <a href="#">Maitenance Request</a>
+                        <a href="maitenance.html">Maitenance Request</a>
                     </li>
                     <li>
                         <a href="contact-us.html">Contact Us</a>
@@ -58,7 +58,7 @@
                     </label>
                     <label>Middle Name (optional)
                         <input id="middle-name" name="Middle name:" type="text"
-                        required />
+                        />
                     </label>
                     <label>Last Name <span style="color:#ff0000">*</span>
                         <input id="last-name" name="Last name:" type="text"
@@ -80,7 +80,7 @@
                         required />
                     </label>
                     <label>Birthdate <span style="color:#ff0000">*</span>
-                        <input id="birthday-id" name="Birthdate:" type="text" placeholder="MM/DD/YYYY"
+                        <input id="birthday-id" name="Birthdate:" type="date" placeholder="MM/DD/YYYY"
                         required />
                     </label>
                     <label>I hereby apply to rent/lease the property at: <span style="color:#ff0000">*</span>
@@ -396,9 +396,9 @@
                     of the information contained herein solely for the purpose of establishing my qualifications as a tenant. I release anyone verifying such
                     information or providing information, from liability. I understand that incomplete or incorrect information provided in the application, may cause
                     a delay in processing and can result in denial of tenancy.
-                    <label>Picture of Signature:</label>
-                    <input type="file" name="attachment" accept="image/png, image/jpeg">
-                    <input type="email" name="email" placeholder="MM/DD/YYYY">
+                    <label>Picture & Date of Signature: <span style="color:#ff0000">*</span></label>
+                    <input type="file" name="attachment" accept="image/png, image/jpeg" required/>
+                    <input type="date" name="Date:" placeholder="MM/DD/YYYY" required/>
                 </label>
 
                 <!-- <h3>Section TEST FILLER</h3>

@@ -1,140 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="background_styles.css">
-      <link rel="stylesheet" href="styles.css">
-      <script src="script.js" defer></script>
-      <title>Responsive Navbar</title>
+        <link rel="stylesheet" href="maitenance-style.css">
+        <script src="apply-script.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-      <nav class="navbar">
-        <div class="brand-title">
-            <a id="home-button" href="file:///C:/Users/Nicholas%20Schumacher/Desktop/C++%20Projects/Premier%20Properties/index.html" 
-            title="Go to the Homepage">Premier Properties
+        <nav class="navbar">
+            <div class="brand-title">
+                <a id="home-button" href="index.html" 
+                title="Go to the Homepage">Premier Properties
+                </a>
+            </div>
+            <!-- Hamburger -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-        </div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <div class="dropdown">Locations
+                            <!-- <button class="dropbtn">
+                                <i class="fa fa-caret-down"></i> 
+                            </button> -->
+                            <div class="dropdown-content">
+                                <a href="sun-valley.html">Sun Valley</a>
+                                <a href="reseda.html">Reseda</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="apply.html">Apply</a>
+                    </li>
+                    <li>
+                        <a href="maitenance.html">Maitenance Request</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="message-us">
+            <h1>Maitenance Request</h1>
+            <form id="message-form" action="https://formsubmit.co/nicko30403@gmail.com" method="POST">
+                <div id="message-item">
+                    <!-- <div class="section-header">
+                        <h2>Section 1</h2>
+                        <h3>Background Information</h3>
+                    </div> -->
+                    <label>First Name <span style="color:#ff0000">*</span>
+                        <input id="first-name" name="First name:" type="text"
+                        required />
+                    </label>
+                    <label>Middle Name (optional)
+                        <input id="middle-name" name="Middle name:" type="text"
+                        />
+                    </label>
+                    <label>Last Name <span style="color:#ff0000">*</span>
+                        <input id="last-name" name="Last name:" type="text"
+                        required />
+                    </label>
+                    <label>Email Address <span style="color:#ff0000">*</span>
+                        <input id="email" name="Email:" type="text" placeholder="example@gmail.com"
+                        required />
+                    </label>
+                    <label>Phone number
+                        <input id="phone" name="Phone number:" type="text" placeholder="(###) ###-####"/>
+                    </label>
+                    <label>Address <span style="color:#ff0000">*</span>
+                        <input id="address" name="Address:" type="text"
+                        required/>
+                    </label>
+                    <label>Unit Number <span style="color:#ff0000">*</span>
+                        <input id="unit-number" name="Unit Number:" type="number"
+                        min="1" max="16" required/>
+                    </label>
+                    <label>Tell us about the issue you are having.
+                        Please use as much detail as possible to 
+                        help us resolve this more quickly. <span style="color:#ff0000">*</span>
+                        <textarea name="message" rows="5" cols="30" required></textarea>
+                    </label>
+                    <label>Please include an image of the issue if possible:
+                        <input type="file" name="attachment" accept="image/png, image/jpeg">
+                    </label>
+                </div>
+
+                <div class="button-holder">
+                    <input id="submit" type="submit" value="Send Request"></input>
+                </div>
+            </form>
+        </section>
     </body>
 </html>
-
-<style>
-    * {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar-links li:hover {
-    background-color: #555;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-</style>
-
-<script>
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-</script>
