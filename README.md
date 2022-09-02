@@ -5,6 +5,6 @@ All features requested by client have been completed, but expansion will gradual
 
 # Future Plans
 - Add tenant portal.
-- Add payment function for applicants, monthly rent, and miscellaneous fees.
+- Add payment function for applicants, monthly rent, and miscellaneous fees (likely with Stripe integration as of now).
 - Add higher quality images as units become available.
 - Add specific unit information as units become available.
